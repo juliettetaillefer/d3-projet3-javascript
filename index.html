@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Zoom Slider</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<h1>Petit tour en asie</h1>
+		<!--	<nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+				a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a
+				<a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav>-->
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/muraille.jpg" alt="Image de la muraille de chine" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+
+				<h2 class="slide__title"><span>Chine</span> La Grande Muraille</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/birmanie.jpg" alt="photo d'un paysage de birmanie" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Birmanie</span> Bagan</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/cambodge.jpg" alt="paysage du cambodge" />
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Cambodge</span> Temples d'Angkor</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/japon.jpg" alt="foret de bambou au japon" />
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Japon</span> La Bambouseraie d'Arashiyama</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<div class="preview rounded">
+							<img src="images/vietnam.jpg" alt="joli paysage du vietnam" />
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Vietnam</span> Baie d'Along</h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+
+ 		<footer class: "bp-footer">
+				<span>Justories <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+		</footer>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/muraille2.jpg" alt="image supplémentaire" />
+				<div class="content__item-inner">
+					<h2>La Grande Muraille</h2>
+					<h3>"Une construction impressionnante "</h3>
+					<p>La Grande Muraille de Chine, classée au patrimoine de l’Unesco depuis 1987, fait partie des sept merveilles du monde. Elle reste incontestablement l’une des plus belles et des plus impressionnantes constructions sur notre planète. Tel un gigantesque dragon, la Grande Muraille domine déserts, vallées, montagnes et plateaux. Elle s’étend sur presque 9000 kilomètres, d’est en ouest. Construite il y a environ 2000 ans, certaines parties sont aujourd’hui en ruines ou ont carrément disparu mais la Grande Muraille de Chine continue néanmoins d’attirer chaque année des milliers de touristes venus des quatre coins du globe grâce à sa grandeur architecturale et aux légendes qui l’entourent.</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/bagan.jpg" alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>La cité de Bagan</h2>
+					<h3>" Une merveille archéologique "</h3>
+ Ce site se trouve dans la région de Mandalay sur la rive gauche de la rivière Irrawaddy. La ville se trouve en fait en plein cœur de la Birmanie! Pile au centre. Si actuellement Bagan est un vaste site archéologique, du 9eme au 13eme siècle Bagan fut la Capitale du Royaume de Bagan soit le premier empire Birman. L’apogée de la capitale birmane se situe entre le 11eme et le 14eme siècle. Ainsi ce royaume fut un pouvoir central sur une bonne partie de l’Asie du Sud-Est. Bagan étant même le plus grand site archéologique d’Asie. Il faut dire que les birmans n’avaient qu’un mot à la bouche: Construire! Oui, construire des milliers de temples et de stupas en hommage au Bouddha et la construction de milliers de monuments bouddhistes.					<p><a href="https://www.apple.com/ipad-mini-3/performance/">Learn more about Performance &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/temple.jpg" alt="temple" />
+				<div class="content__item-inner">
+					<h2>Les temples d'Angkor</h2>
+					<h3>" Un merveilleux symbole du Cambodge"</h3>
+					<p>À 300 kilomètres au nord-est de Phnom Penh, les temples d’Angkor, sont le symbole d’un Cambodge ancestral et mythique, celui de la civilisation khmère et de ses temples-montagnes. C’est aussi l’emblème d’un renouveau économique et de la reconstruction d’un pays marqué par les conséquences d’une histoire douloureuse. « Redécouvert » au XIXème siècle, l’ensemble d’Angkor souffre des affres du temps et de dégradations jusqu’à son inscription en 1992 sur la liste du patrimoine mondial en péril de l’UNESCO, dont il est retiré en 2004. Devenu incontournable pour les visiteurs étrangers, l’afflux de visiteurs pose de nouveaux problèmes à la préservation du site. </p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/bambou.jpg" alt="Bambouseraie" />
+				<div class="content__item-inner">
+					<h2>La Bambouseraie d'Arashiyama</h2>
+					<h3>"Un voyage dans le coeur de la nature"</h3>
+					<p>La bambouseraie d’Arashiyama n’est pas la seule forêt de bambous de Kyoto, cela dit, c’est la plus jolie et la plus grande de toutes. S’étalant sur 500 mètres de balades à pied, cette forêt offre un cadre somptueux pour tous les amoureux de la nature. Imaginez la sensation que vous pourriez ressentir en vous promenant au mieux de ces gigantesques arbres. Imaginez le calme régnant dans cette forêt où seule le bruissement des plantes avec le vent résonne. Cette bambouseraie est un paradis sur Terre, un lieu d’apaisement, de ressourcement.</p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/baie.jpg" alt="rochers d'Along" />
+				<div class="content__item-inner">
+					<h2>La Baie d'Along</h2>
+					<h3>"Une expérience unique"</h3>
+Un des paysages les plus célèbres d’Asie, la baie d'Along compte environ deux mille pains de sucre de toutes formes et de toutes tailles émergeant de la mer et s’étendant sur des centaines de kilomètres. Le paysage change sans cesse, l’atmosphère est étrange. Il y a quelques millions d’années, Along devait être un immense plateau taraudé par l’eau de pluie. D’immenses masses de calcaire durent se désagréger, laissant debout les roches les plus dures, livrées ensuite aux coups de boutoir du vent et de la mer. Ce qui explique les formes déchiquetées, les grottes, cavités et tunnels qui les transpercent et servirent de refuges aux combattants de la guérilla nord-vietnamienne dans les années 1940-1950. L’endroit a été classé au Patrimoine mondial de l’humanité par l’Unesco en 1993, sous le critère de « beauté naturelle ». 					<p><a href="https://www.apple.com/watch/new-ways-to-connect/">Learn more about new ways to connect &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
